@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pesquisa</title>
+	<link rel="stylesheet" type="text/css" href="css/style-search.css">
+</head>
+
+<body>
+	<style>
+		#seventyfive:checked~.progress>.progress-bar {
+			width: 65.2%;
+			background-color: #ffffff;
+		}
+	</style>
+
+	<header>
+		<div class="logo flex">
+			Logo
+		</div>
+		<nav class="flex">
+			<ul id="menu">
+				<li><a href="#">Imóveis</a></li>
+				<li><a href="#">Proprietários</a></li>
+				<li><a href="#">Imobiliárias</a></li>
+				<li><a href="#">Indique</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Ajuda</a></li>
+			</ul>
+		</nav>
+		<div class="flex">
+			<button type="submit" class="btn">Enviar</button>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<div class="top">
+				<a href="#" class="link">Pular Tudo</a>
+			</div>
+			<div class="title">
+				<h1>Por qual preço
+					você procura?</h1>
+			</div>
+			<div class="caption">
+				<h1>Pense no valor total (com condomínio e IPTU)</h1>
+			</div>
+			<div class="options">
+				<div class="option">
+					<form>
+						<input class="cidade" type="number" placeholder="Digite o valor" aria-label="cidades">
+						<ion-icon name="cash-outline"></ion-icon>
+					</form>
+				</div>
+			</div>
+			<div class="bar">
+				<input type="radio" class="radio" name="progress" value="five" id="five">
+				<label for="five" class="label"></label>
+
+				<input type="radio" class="radio" name="progress" value="twentyfive" id="twentyfive">
+				<label for="fifty" class="label"></label>
+
+				<input type="radio" class="radio" name="progress" value="fifty" id="fifty">
+				<label for="twentyfive" class="label"></label>
+
+				<input type="radio" class="radio" name="progress" value="seventyfive" id="seventyfive" checked>
+				<label for="seventyfive" class="label"></label>
+
+				<input type="radio" class="radio" name="progress" value="onehundred" id="onehundred">
+				<label for="onehundred" class="label"></label>
+
+				<div class="progress">
+					<div class="progress-bar"></div>
+				</div>
+			</div>
+			<div class="foot">
+				<a href="pergunta-3.html" class="access-back">Voltar</a>
+
+				<a href="pergunta-5.html" class="follow">Continuar</a>
+			</div>
+		</section>
+	</main>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

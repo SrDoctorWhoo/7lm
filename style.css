@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+}
+
+header {
+  background-color: #0a2326;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.flex {
+  flex: 1 1 1;
+}
+
+.logo {
+  margin: 20px;
+  color: #fff;
+  width: 10%;
+  font-size: 3rem;
+}
+
+.btn {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  border-radius: 50px;
+  padding: 20px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+ul {
+  line-height: 60px;
+  margin-top: 20px;
+}
+
+ul li {
+  display: inline;
+  padding: 20px;
+}
+
+#menu a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#menu a:hover,
+a:active {
+  color: #d9583b;
+}
+
+.top a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.top a:hover,
+a:active {
+  color: #d9583b;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.container {
+  background-color: #0a2326;
+  color: #fff;
+  border-radius: 30px;
+  margin: 30px;
+  padding: 50px;
+  width: 40%;
+}
+
+.top {
+  text-align: right;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  cursor: default;
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.7rem;
+  cursor: default;
+}
+
+.options {
+  margin: 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+.option button {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  width: 40%;
+  height: 50px;
+  border-radius: 20px;
+  margin: 10px 10px;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.option button:link button:visited {
+  color: #f70b0b;
+  text-decoration: none;
+}
+
+.option button:hover,
+button:active {
+  color: #d9583b;
+}
+
+.foot h1 {
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+.foot a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.foot .follow {
+  margin-left: 280px;
+  padding: 10px 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.foot a:hover {
+  color: #d9583b;
+}
+
+/*barra de progresso*/
+.bar {
+  margin: 30px auto;
+  margin-top: -10px;
+  width: 400px;
+  text-align: center;
+  cursor: default;
+}
+
+.bar .progress {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.progress {
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 16px;
+  border-radius: 4px;
+}
+
+#five:checked ~ .progress > .progress-bar {
+  width: 16.6%;
+  background-color: #ffffff;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 5px 20px;
+  padding: 3px 8px;
+  text-shadow: 0 1px black;
+  border-radius: 3px;
+  cursor: default;
+}
+
+.radio:checked + .label {
+  background: transparent;
+  cursor: default;
+}
+
+/*para sites responsivo no mobile resolução abaixo de 600*/
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 1.2rem;
+    color: red;
+  }
+}
