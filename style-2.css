@@ -5,10 +5,11 @@
 
 body {
   font-family: "open sans", sans-serif;
+  background-color: #081f45;
 }
 
 header {
-  background-color: #0a2326;
+  background-color: #00aae0;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -54,17 +55,18 @@ a:visited {
 
 #menu a:hover,
 a:active {
-  color: #d9583b;
+  color: #081f45;
 }
 
 .top a:link,
 a:visited {
   text-decoration: none;
+  color: #fff;
 }
 
 .top a:hover,
 a:active {
-  color: #d9583b;
+  color: #081f45;
 }
 
 main {
@@ -72,7 +74,7 @@ main {
 }
 
 .container {
-  background-color: #0a2326;
+  background-color: #00aae0;
   color: #fff;
   border-radius: 30px;
   margin: 30px;
@@ -123,7 +125,7 @@ main {
 
 .option button:hover,
 button:active {
-  color: #d9583b;
+  color: #081f45;
 }
 
 .foot {
@@ -148,14 +150,15 @@ button:active {
 }
 
 .foot a:hover {
-  color: #d9583b;
+  color: #081f45;
 }
 
 /*barra de progresso*/
 .bar {
   margin: 30px auto;
   margin-top: -10px;
-  width: 400px;
+  max-width: 1000px;
+  min-width: 300px;
   text-align: center;
   cursor: default;
 }
@@ -199,9 +202,93 @@ button:active {
 }
 
 /*para sites responsivo no mobile resolução abaixo de 600*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .title {
-    font-size: 1.2rem;
-    color: red;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  .progress-bar {
+    height: 16px;
+    border-radius: 4px;
+  }
+  .bar {
+    margin: 15px auto;
+    margin-top: -50px;
+    margin-left: -5px;
+    width: 100px;
+    cursor: default;
+  }
+
+  .bar .progress {
+    width: 250px;
+  }
+
+  .progress {
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+      0 1px rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+      0 1px rgba(255, 255, 255, 0.08);
+  }
+  .container {
+    background-color: #00aae0;
+    color: #fff;
+    border-radius: 30px;
+    margin: 3.5px;
+    padding: 55px;
+    width: 70%;
+  }
+
+  .foot {
+    margin-left: 0;
+  }
+
+  .foot a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .foot .follow {
+    margin-left: 210px;
+    padding: 10px 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+
+  .foot a:hover {
+    color: #081f45;
+  }
+
+  .options {
+    margin: 20px;
+    margin-bottom: 15%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .option button {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    width: 45%;
+    height: 50px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .option button:link button:visited {
+    color: #f70b0b;
+    text-decoration: none;
+  }
+
+  .option button:hover,
+  button:active {
+    color: #081f45;
+    background-color: white;
+    border-color: #081f45;
   }
 }
